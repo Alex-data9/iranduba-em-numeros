@@ -1,0 +1,11 @@
+# capturas de tela geradas pelos testes
+tests/capturas/
+# configuração local do Claude Code e da Vercel
+.claude/
+.vercel/
+__pycache__/
+node_modules/
+# temporários do Office
+~$*
+# foto sem licença confirmada (não publicar)
+imagens_iranduba/b2ap3_large_Iranduba3.jpeg

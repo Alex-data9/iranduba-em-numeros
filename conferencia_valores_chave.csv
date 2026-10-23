@@ -1,0 +1,28 @@
+﻿item,esperado,no_csv,ok
+Pop. Iranduba 2022 (Tabela 9606),61163,61163,True
+Homens Iranduba (9606),31364,31364,True
+Mulheres Iranduba (9606),29799,29799,True
+Pretos Iranduba (9606),3510,3510,True
+Alfabetização Iranduba 15+ (9543),91.14,91.14,True
+Alfabetização pretos Iranduba (9543),86.09,86.09,True
+Deficiência: pessoas 2+ Iranduba (10126),58967,58967,True
+"Deficiência: com deficiência Iranduba (10126, bloco 2)",4777,4777,True
+"Deficiência: % Iranduba (10126, bloco 3)",8.1,8.1,True
+"Deficiência: % indígenas Iranduba (10126, bloco 3)",13.0,13.0,True
+"Deficiência: % Manaus (10126, bloco 3)",7.4,7.4,True
+Domicílios Iranduba (9881),17812,17812,True
+Domicílios sem cônjuge Iranduba (9881),6214,6214,True
+"Domicílios sem cônjuge % do total geral Iranduba (9881, bloco 2)",34.89,34.89,True
+Pop. residente Iranduba 2022 (Panorama),61163,61163,True
+Pop. residente Manaus 2022 (Panorama),2063689,2063689,True
+Taxa de crescimento Iranduba 2022,3.44,3.44,True
+Analfabetismo PcD Iranduba,22.34,22.34,True
+Pop. em favelas Iranduba,18684,18684,True
+9882: soma das 5 composições = 17812 (Iranduba),17812,17812.0,True
+9882: Homens+Mulheres = Total por composição (Iranduba),igual,igual,True
+9606: cores somam o total – Iranduba / Total,61163.0,61163.0,True
+9606: cores somam o total – Iranduba / Homens,31364.0,31364.0,True
+9606: cores somam o total – Iranduba / Mulheres,29799.0,29799.0,True
+9606: cores somam o total – Manaus / Total (informativo: diferença já existe no arquivo do IBGE),2063689.0,2063616.0,True
+9606: cores somam o total – Manaus / Homens (informativo: diferença já existe no arquivo do IBGE),998842.0,998808.0,True
+9606: cores somam o total – Manaus / Mulheres (informativo: diferença já existe no arquivo do IBGE),1064847.0,1064808.0,True

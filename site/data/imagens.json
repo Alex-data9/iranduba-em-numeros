@@ -1,0 +1,51 @@
+{
+ "hero-ponte-rio-negro": {
+  "original": "Ponte_Rio_Negro_-_Amazonas_-_Brasil.jpg",
+  "largura": 1600,
+  "altura": 1071,
+  "larguras": [
+   640,
+   1080,
+   1600
+  ]
+ },
+ "fechamento-vista-aerea": {
+  "original": "Vista_aérea_da_ponte_sobre_o_rio_Negro_que_liga_Manaus_a_Iranduba.jpg",
+  "largura": 1800,
+  "altura": 1198,
+  "larguras": [
+   640,
+   1080,
+   1600
+  ]
+ },
+ "cidade-casas-flutuantes": {
+  "original": "Vista_aerea_do_porto_rodoviario_de_Iranduba_(AM).jpg",
+  "largura": 1800,
+  "altura": 1198,
+  "larguras": [
+   640,
+   1080,
+   1600
+  ]
+ },
+ "raizes-arvore-ruina": {
+  "original": "Árvore_Poderosa.jpg",
+  "largura": 1536,
+  "altura": 2048,
+  "larguras": [
+   640,
+   1080,
+   1536
+  ]
+ },
+ "crescimento-ponte-entardecer": {
+  "original": "Ponte_Rio_Negro_AM.jpg",
+  "largura": 1024,
+  "altura": 768,
+  "larguras": [
+   640,
+   1024
+  ]
+ }
+}

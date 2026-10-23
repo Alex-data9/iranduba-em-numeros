@@ -1,0 +1,12 @@
+{
+  "name": "iranduba-em-numeros",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Painel narrativo do Censo 2022 de Iranduba (AM) comparado com Manaus",
+  "scripts": {
+    "dados": "python scripts/build_dados.py",
+    "imagens": "python scripts/build_imagens.py",
+    "build": "node scripts/check_creditos.mjs",
+    "dev": "python -m http.server 4173 --directory site"
+  }
+}

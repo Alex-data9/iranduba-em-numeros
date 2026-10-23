@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iranduba em números · Censo 2022</title>
+<meta name="description" content="Painel narrativo do Censo Demográfico 2022 de Iranduba (AM), comparado com Manaus: população, crescimento, sexo, idade, cor ou raça, alfabetização, situação de domicílio, deficiência, autismo e famílias.">
+<meta name="theme-color" content="#0B1820">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Iranduba em números · Censo 2022">
+<meta property="og:description" content="Quem vive em Iranduba? O Censo 2022 do município, lado a lado com Manaus.">
+<meta property="og:image" content="assets/img/hero-ponte-rio-negro-1600.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/rokkitt-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/literata-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" imagesrcset="assets/img/hero-ponte-rio-negro-640.webp 640w, assets/img/hero-ponte-rio-negro-1080.webp 1080w, assets/img/hero-ponte-rio-negro-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-modo="comparar">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ============ barra fixa: alternador global ============ -->
+<header class="barra" id="barra">
+  <a class="marca-site" href="#abertura">Iranduba <em>em números</em></a>
+  <nav class="sumario" aria-label="Seções">
+    <a href="#crescimento">Crescimento</a><a href="#piramide">Sexo e idade</a><a href="#cor">Cor ou raça</a><a href="#educacao">Educação</a><a href="#territorio">Urbano e rural</a><a href="#deficiencia">Deficiência</a><a href="#familias">Famílias</a><a href="#sintese">Síntese</a>
+  </nav>
+  <div class="alternador" role="radiogroup" aria-label="Município exibido nos gráficos">
+    <button type="button" role="radio" data-modo="iranduba" aria-checked="false"><i class="pino pino-i" aria-hidden="true"></i>Iranduba</button>
+    <button type="button" role="radio" data-modo="manaus" aria-checked="false"><i class="pino pino-m" aria-hidden="true"></i>Manaus</button>
+    <button type="button" role="radio" data-modo="comparar" aria-checked="true">Comparar</button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ============ 0 · abertura ============ -->
+<section class="abertura" id="abertura" aria-labelledby="t-abertura">
+  <picture class="abertura-foto">
+    <source type="image/webp" srcset="assets/img/hero-ponte-rio-negro-640.webp 640w, assets/img/hero-ponte-rio-negro-1080.webp 1080w, assets/img/hero-ponte-rio-negro-1600.webp 1600w" sizes="100vw">
+    <img src="assets/img/hero-ponte-rio-negro-1600.jpg" srcset="assets/img/hero-ponte-rio-negro-640.jpg 640w, assets/img/hero-ponte-rio-negro-1080.jpg 1080w, assets/img/hero-ponte-rio-negro-1600.jpg 1600w" sizes="100vw" width="1600" height="1071" fetchpriority="high" decoding="async" alt="Vista aérea da ponte estaiada sobre o rio Negro: mastro central com cabos em leque, o tabuleiro e pequenos barcos sobre a água escura.">
+  </picture>
+  <div class="abertura-luz" aria-hidden="true"></div>
+  <div class="abertura-texto">
+    <p class="sobretitulo">Censo Demográfico <span data-rotulo>2022</span> · Iranduba (AM) e Manaus</p>
+    <h1 id="t-abertura">Quem vive em <span class="quebra">Iranduba?</span></h1>
+    <p class="heroi"><b class="contador" data-ref="iranduba.pop" data-u="0"></b> <span>pessoas</span></p>
+    <p class="abertura-sub">Um retrato da cidade na margem oposta do rio Negro em relação a Manaus — contado em perguntas simples, uma por seção.</p>
+    <dl class="abertura-fatos">
+      <div><dt>homens</dt><dd><b class="contador" data-ref="iranduba.homens" data-u="0"></b></dd></div>
+      <div><dt>mulheres</dt><dd><b class="contador" data-ref="iranduba.mulheres" data-u="0"></b></dd></div>
+      <div><dt>crescimento ao ano, <span data-rotulo>2010–2022</span></dt><dd><b class="contador" data-ref="iranduba.taxa_oficial" data-u="%"></b></dd></div>
+    </dl>
+    <a class="descer" href="#crescimento">Começar a leitura <span aria-hidden="true">↓</span></a>
+  </div>
+  <div class="horizonte" data-tipo="abertura" aria-hidden="true"></div>
+</section>
+
+<div class="dois-rios" aria-hidden="true"></div>
+
+<!-- ============ 1 · população e crescimento ============ -->
+<section class="secao tom-noite" id="crescimento" aria-labelledby="t-crescimento">
+  <div class="horizonte" data-tipo="ponte" aria-hidden="true"></div>
+  <header class="cabeca">
+    <p class="rotulo-secao">População e crescimento</p>
+    <h2 id="t-crescimento">Quanto a cidade cresceu?</h2>
+    <p class="numero-grande"><b data-ref="iranduba.taxa_oficial" data-u="%"></b><span class="unidade">ao ano entre <span data-rotulo>2010</span> e <span data-rotulo>2022</span></span></p>
+    <p class="comparacao">cerca de <b data-ref="crescimento.vezes_manaus"></b> o ritmo de Manaus (<b data-ref="manaus.taxa_oficial" data-u="%"></b> ao ano)</p>
+  </header>
+  <div class="corpo corpo-com-janela">
+    <figure class="painel revela" id="g-crescimento" data-grafico="serie_populacao">
+      <figcaption class="painel-titulo">População residente nos Censos <span class="controles" data-controle="escala"><button type="button" aria-pressed="true" data-v="indice">Índice (<span data-rotulo>1991</span> = <span data-rotulo>100</span>)</button><button type="button" aria-pressed="false" data-v="pessoas">Pessoas</button></span></figcaption>
+      <div class="grafico" role="img"></div>
+      <div class="taxas" aria-label="Taxa geométrica de crescimento por período"></div>
+    </figure>
+    <figure class="janela janela-crescimento revela">
+      <picture>
+        <source type="image/webp" srcset="assets/img/crescimento-ponte-entardecer-640.webp 640w, assets/img/crescimento-ponte-entardecer-1024.webp 1024w" sizes="(min-width: 960px) 34vw, 92vw">
+        <img src="assets/img/crescimento-ponte-entardecer-1024.jpg" srcset="assets/img/crescimento-ponte-entardecer-640.jpg 640w, assets/img/crescimento-ponte-entardecer-1024.jpg 1024w" sizes="(min-width: 960px) 34vw, 92vw" width="1024" height="768" loading="lazy" decoding="async" alt="A ponte sobre o rio Negro vista ao longe, entre galhos com folhas em primeiro plano, sob céu carregado.">
+      </picture>
+      <figcaption>A ponte entre Manaus e Iranduba, em operação desde outubro de <span data-rotulo>2011</span>.</figcaption>
+    </figure>
+  </div>
+  <div class="leitura revela">
+    <p>A população passou de <b data-ref="iranduba.pop_1991"></b> pessoas em <span data-rotulo>1991</span> para <b data-ref="iranduba.pop_2022"></b> em <span data-rotulo>2022</span>, <b data-ref="iranduba.vezes_1991"></b> maior. Depois de <span data-rotulo>2010</span>, o ritmo acelerou de novo: <b data-ref="iranduba.var_2010_2022_abs"></b> pessoas a mais em doze anos.</p>
+  </div>
+  <ul class="cartoes revela" aria-label="População por sexo e idade, Iranduba">
+    <li class="cartao"><span class="cartao-n" data-ref="iranduba.homens" data-u="0"></span><span class="cartao-r">homens · <b data-ref="iranduba.homens_pct"></b></span></li>
+    <li class="cartao"><span class="cartao-n" data-ref="iranduba.mulheres" data-u="0"></span><span class="cartao-r">mulheres · <b data-ref="iranduba.mulheres_pct"></b></span></li>
+    <li class="cartao"><span class="cartao-n" data-ref="iranduba.criancas" data-u="0"></span><span class="cartao-r">crianças, <span data-rotulo>0 a 9</span> anos · <b data-ref="iranduba.criancas_pct"></b></span></li>
+    <li class="cartao"><span class="cartao-n" data-ref="iranduba.adolescentes" data-u="0"></span><span class="cartao-r">adolescentes, <span data-rotulo>10 a 19</span> anos · <b data-ref="iranduba.adolescentes_pct"></b></span></li>
+  </ul>
+  <div class="ressalvas revela">
+    <p class="selo"><span class="selo-icone" aria-hidden="true">!</span>A ponte é hipótese, não causa. A cronologia é compatível, mas o Censo, sozinho, não separa o efeito da ponte de outros fatores, como terrenos mais baratos ou a dinâmica de Manaus.</p>
+    <details class="saiba"><summary>Saiba mais: taxa geométrica de crescimento</summary><p>É o ritmo médio anual que, repetido ano a ano de forma composta, leva a população de um censo ao seguinte. Por isso as taxas por período (<span data-rotulo>9</span>, <span data-rotulo>10</span> e <span data-rotulo>12</span> anos) são comparáveis entre si.</p></details>
+  </div>
+</section>
+
+<div class="dois-rios" aria-hidden="true"></div>
+
+<!-- ============ 2 · sexo e pirâmide ============ -->
+<section class="secao tom-floresta" id="piramide" aria-labelledby="t-piramide">
+  <div class="horizonte" data-tipo="chamines" aria-hidden="true"></div>
+  <header class="cabeca">
+    <p class="rotulo-secao">Sexo e pirâmide etária</p>
+    <h2 id="t-piramide">Mais homens ou mulheres? Quantos jovens?</h2>
+    <p class="numero-grande"><b data-ref="iranduba.razao_sexos"></b><span class="unidade">homens para cada <span data-rotulo>100</span> mulheres</span></p>
+    <p class="comparacao">em Manaus, <b data-ref="manaus.razao_sexos"></b> — lá as mulheres são maioria</p>
+  </header>
+  <div class="corpo corpo-duplo">
+    <figure class="painel revela" id="g-piramide" data-grafico="piramide">
+      <figcaption class="painel-titulo">Pirâmide etária <span class="modo-nota"></span></figcaption>
+      <div class="grafico grafico-alto" role="img"></div>
+    </figure>
+    <figure class="painel revela" id="g-razao-faixa" data-grafico="razao_faixa">
+      <figcaption class="painel-titulo">Homens para cada <span data-rotulo>100</span> mulheres, por idade</figcaption>
+      <div class="grafico" role="img"></div>
+    </figure>
+  </div>
+  <div class="leitura revela">
+    <p>Na infância a razão é <b data-ref="iranduba.razao_faixa_0"></b>, normal ao nascer; o excedente de homens surge na vida adulta e chega a <b data-ref="iranduba.razao_faixa_4"></b> entre <span data-rotulo>60 e 74</span> anos. Iranduba é mais jovem: idade mediana de <b data-ref="iranduba.mediana"></b>, contra <b data-ref="manaus.mediana"></b> em Manaus.</p>
+  </div>
+  <dl class="indicadores revela">
+    <div><dt>Índice de envelhecimento</dt><dd><b data-ref="iranduba.ind_envelhecimento"></b> <small>Manaus <b data-ref="manaus.ind_envelhecimento"></b></small></dd></div>
+    <div><dt>Razão de dependência</dt><dd><b data-ref="iranduba.razao_dependencia"></b> <small>só Iranduba</small></dd></div>
+    <div><dt>Distância entre as pirâmides</dt><dd><b data-ref="dissim.piramides"></b> <small>dissimilaridade</small></dd></div>
+  </dl>
+  <div class="ressalvas revela">
+    <details class="saiba"><summary>Saiba mais: razão de sexos, mediana, envelhecimento e dissimilaridade</summary>
+      <ul>
+        <li><strong>Razão de sexos</strong>: homens para cada <span data-rotulo>100</span> mulheres. Acima de <span data-rotulo>100</span>, há mais homens.</li>
+        <li><strong>Idade mediana</strong>: metade da população tem essa idade ou menos.</li>
+        <li><strong>Índice de envelhecimento</strong>: pessoas com <span data-rotulo>60</span> anos ou mais para cada <span data-rotulo>100</span> com até <span data-rotulo>14</span> anos.</li>
+        <li><strong>Razão de dependência</strong>: pessoas de <span data-rotulo>0 a 14</span> e de <span data-rotulo>65</span> anos ou mais para cada <span data-rotulo>100</span> de <span data-rotulo>15 a 64</span> anos.</li>
+        <li><strong>Dissimilaridade</strong>: parcela da população que teria de mudar de grupo de sexo e idade para as duas pirâmides ficarem iguais.</li>
+        <li>Por que há mais homens adultos? A explicação mais plausível é a migração seletiva de homens, por exemplo para trabalho — uma <strong>hipótese</strong>, que exigiria dados de migração para ser testada.</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<div class="dois-rios" aria-hidden="true"></div>
+
+<!-- ============ 3 · cor ou raça ============ -->
+<section class="secao tom-noite" id="cor" aria-labelledby="t-cor">
+  <div class="horizonte" data-tipo="mata" aria-hidden="true"></div>
+  <header class="cabeca">
+    <p class="rotulo-secao">Cor ou raça</p>
+    <h2 id="t-cor">Como as pessoas se identificam, e isso mudou?</h2>
+    <p class="numero-grande"><b data-ref="iranduba.cor_parda_2022_pct"></b><span class="unidade">se declaram pardas</span></p>
+    <p class="comparacao">em Manaus, <b data-ref="manaus.cor_parda_2022_pct"></b></p>
+  </header>
+  <div class="corpo corpo-com-raiz">
+    <div class="pilha">
+      <figure class="painel revela" id="g-cor" data-grafico="cor">
+        <figcaption class="painel-titulo">Distribuição por cor ou raça (% da população)</figcaption>
+        <div class="grafico" role="img"></div>
+      </figure>
+      <div class="corpo-duplo">
+        <figure class="painel revela" id="g-mediana-cor" data-grafico="mediana_cor">
+          <figcaption class="painel-titulo">Idade mediana por cor ou raça (anos)</figcaption>
+          <div class="grafico" role="img"></div>
+        </figure>
+        <figure class="painel revela" id="g-razao-cor" data-grafico="razao_cor">
+          <figcaption class="painel-titulo">Homens para cada <span data-rotulo>100</span> mulheres, por cor ou raça</figcaption>
+          <div class="grafico" role="img"></div>
+        </figure>
+      </div>
+    </div>
+    <figure class="janela janela-raiz revela">
+      <picture>
+        <source type="image/webp" srcset="assets/img/raizes-arvore-ruina-640.webp 640w, assets/img/raizes-arvore-ruina-1080.webp 1080w" sizes="(min-width: 960px) 26vw, 92vw">
+        <img src="assets/img/raizes-arvore-ruina-1080.jpg" srcset="assets/img/raizes-arvore-ruina-640.jpg 640w, assets/img/raizes-arvore-ruina-1080.jpg 1080w" sizes="(min-width: 960px) 26vw, 92vw" width="1536" height="2048" loading="lazy" decoding="async" alt="Grande árvore vista de baixo, com o tronco subindo junto a paredes antigas de tijolo, sem telhado, cercadas de vegetação.">
+      </picture>
+      <figcaption>Uma grande árvore entre paredes antigas.</figcaption>
+    </figure>
+  </div>
+  <div class="leitura revela">
+    <p>A composição mudou pouco desde <span data-rotulo>2010</span> (dissimilaridade de <b data-ref="dissim.cor_2010_2022"></b>), mas as contagens de pessoas pretas (<b data-ref="iranduba.cor_preta_2010"></b> → <b data-ref="iranduba.cor_preta_2022"></b>) e indígenas (<b data-ref="iranduba.cor_indigena_2010"></b> → <b data-ref="iranduba.cor_indigena_2022"></b>) cresceram mais que a população. Entre pessoas pretas há <b data-ref="iranduba.razao_pretos"></b> homens para cada <span data-rotulo>100</span> mulheres, a maior razão entre os grupos.</p>
+  </div>
+  <div class="ressalvas revela">
+    <p class="selo"><span class="selo-icone" aria-hidden="true">!</span>Grupo pequeno: amarela (<b data-ref="iranduba.cor_amarela_2022"></b> pessoas) e indígena (<b data-ref="iranduba.cor_indigena_2022"></b>). Leia com cautela e não como achado.</p>
+    <p class="selo"><span class="selo-icone" aria-hidden="true">!</span>Cor ou raça é autodeclarada: a comparação entre <span data-rotulo>2010</span> e <span data-rotulo>2022</span> mistura mudança na população com mudança na forma como as pessoas se identificam.</p>
+  </div>
+</section>
+
+<div class="dois-rios" aria-hidden="true"></div>
+
+<!-- ============ 4 · educação ============ -->
+<section class="secao tom-barro" id="educacao" aria-labelledby="t-educacao">
+  <div class="horizonte" data-tipo="olarias" aria-hidden="true"></div>
+  <header class="cabeca">
+    <p class="rotulo-secao">Educação</p>
+    <h2 id="t-educacao">Quem sabe ler e escrever?</h2>
+    <p class="numero-grande"><b data-ref="iranduba.alfab"></b><span class="unidade">das pessoas de <span data-rotulo>15</span> anos ou mais são alfabetizadas</span></p>
+    <p class="comparacao">em Manaus, <b data-ref="manaus.alfab"></b> — <b data-ref="educacao.dif_pp"></b> acima</p>
+  </header>
+  <div class="corpo corpo-duplo">
+    <figure class="painel revela" id="g-alfab-cor" data-grafico="alfab_cor">
+      <figcaption class="painel-titulo">Taxa de alfabetização por cor ou raça (%)</figcaption>
+      <div class="grafico" role="img"></div>
+    </figure>
+    <figure class="painel revela" id="g-alfab-sexo" data-grafico="alfab_sexo">
+      <figcaption class="painel-titulo">Homens × mulheres, por cor ou raça (%) <span class="modo-nota"></span></figcaption>
+      <div class="grafico" role="img"></div>
+    </figure>
+  </div>
+  <div class="leitura revela">
+    <p>As mulheres superam os homens na alfabetização (<b data-ref="iranduba.alfab_m_total"></b> × <b data-ref="iranduba.alfab_h_total"></b>) e nos anos de estudo. Pessoas pretas (<b data-ref="iranduba.alfab_t_preta"></b>) e indígenas (<b data-ref="iranduba.alfab_t_indigena"></b>) ficam <b data-ref="educacao.gap_pretas"></b> e <b data-ref="educacao.gap_indigenas"></b> abaixo das brancas (<b data-ref="iranduba.alfab_t_branca"></b>).</p>
+  </div>
+  <dl class="indicadores revela">
+    <div><dt>Anos médios de estudo · mulheres</dt><dd><b data-ref="iranduba.anos_estudo_m"></b> <small>só Iranduba</small></dd></div>
+    <div><dt>Anos médios de estudo · homens</dt><dd><b data-ref="iranduba.anos_estudo_h"></b> <small>só Iranduba</small></dd></div>
+    <div><dt>Não alfabetizados, comparado a Manaus</dt><dd><b data-ref="educacao.vezes_nao_alfab"></b> <small>a proporção da capital</small></dd></div>
+  </dl>
+  <div class="ressalvas revela">
+    <p class="selo"><span class="selo-icone" aria-hidden="true">!</span>Grupo pequeno: amarela e indígena. As taxas não são padronizadas por idade — e as pessoas pretas têm idade mediana de <b data-ref="iranduba.mediana_preta"></b>, contra <b data-ref="iranduba.mediana_branca"></b> das brancas; parte da diferença pode vir da estrutura etária.</p>
+    <details class="saiba"><summary>Saiba mais: taxa de alfabetização</summary><p>Percentual de pessoas de <span data-rotulo>15</span> anos ou mais que sabem ler e escrever pelo menos um bilhete simples. No Censo, é contagem de toda a população (universo), não estimativa por amostra.</p></details>
+  </div>
+</section>
+
+<div class="dois-rios" aria-hidden="true"></div>
+
+<!-- ============ 5 · urbano e rural ============ -->
+<section class="secao tom-floresta" id="territorio" aria-labelledby="t-territorio">
+  <div class="horizonte" data-tipo="campos" aria-hidden="true"></div>
+  <header class="cabeca">
+    <p class="rotulo-secao">Urbano e rural</p>
+    <h2 id="t-territorio">Onde as pessoas vivem?</h2>
+    <p class="numero-grande"><b data-ref="iranduba.rural_pct1"></b><span class="unidade">vivem em área rural — quase uma em cada quatro pessoas</span></p>
+    <p class="comparacao">em Manaus, <b data-ref="manaus.rural_pct"></b></p>
+  </header>
+  <div class="corpo corpo-com-janela">
+    <div class="pilha">
+      <figure class="painel revela" id="g-situacao" data-grafico="situacao">
+        <figcaption class="painel-titulo">População por situação do domicílio (%)</figcaption>
+        <div class="grafico" role="img"></div>
+      </figure>
+      <figure class="painel revela" id="g-favelas" data-grafico="favelas">
+        <figcaption class="painel-titulo">Favelas e comunidades urbanas <span class="modo-nota"></span></figcaption>
+        <div class="grafico" role="img"></div>
+      </figure>
+    </div>
+    <figure class="janela janela-cidade revela">
+      <picture>
+        <source type="image/webp" srcset="assets/img/cidade-casas-flutuantes-640.webp 640w, assets/img/cidade-casas-flutuantes-1080.webp 1080w, assets/img/cidade-casas-flutuantes-1600.webp 1600w" sizes="(min-width: 960px) 38vw, 92vw">
+        <img src="assets/img/cidade-casas-flutuantes-1080.jpg" srcset="assets/img/cidade-casas-flutuantes-640.jpg 640w, assets/img/cidade-casas-flutuantes-1080.jpg 1080w, assets/img/cidade-casas-flutuantes-1600.jpg 1600w" sizes="(min-width: 960px) 38vw, 92vw" width="1800" height="1198" loading="lazy" decoding="async" alt="Vista aérea do porto rodoviário de Iranduba: casas flutuantes de telhado vermelho e cinza, barcos de passageiros e um navio cinza atracados, e a margem de terra com escadaria e casas no alto.">
+      </picture>
+      <figcaption>Porto rodoviário de Iranduba, visto do alto (<span data-rotulo>2012</span>).</figcaption>
+    </figure>
+  </div>
+  <div class="leitura revela">
+    <p>Iranduba integra a região metropolitana, mas mantém parte relevante da população no campo. Moram em favelas e comunidades urbanas <b data-ref="iranduba.favelas_pop"></b> pessoas (<b data-ref="iranduba.favelas_pct"></b>), com alfabetização semelhante à do município (<b data-ref="iranduba.alfab_favelas"></b> × <b data-ref="iranduba.alfab"></b>).</p>
+  </div>
+  <div class="ressalvas revela">
+    <p class="selo"><span class="selo-icone" aria-hidden="true">!</span><b data-ref="iranduba.favelas_pct"></b> foi calculado pelo autor (pessoas em favelas ÷ população); o arquivo do IBGE não traz esse percentual.</p>
+  </div>
+</section>
+
+<div class="dois-rios" aria-hidden="true"></div>
+
+<!-- ============ 6 · deficiência e autismo ============ -->
+<section class="secao tom-sobrio" id="deficiencia" aria-labelledby="t-deficiencia">
+  <div class="horizonte" data-tipo="mata-sobria" aria-hidden="true"></div>
+  <header class="cabeca">
+    <p class="rotulo-secao">Deficiência e autismo</p>
+    <h2 id="t-deficiencia">Quantas pessoas têm deficiência ou autismo?</h2>
+    <p class="numero-grande"><b data-ref="iranduba.def_total"></b><span class="unidade">das pessoas de <span data-rotulo>2</span> anos ou mais têm deficiência</span></p>
+    <p class="comparacao"><b data-ref="iranduba.def_casos"></b> de <b data-ref="iranduba.pop2"></b> pessoas · Manaus <b data-ref="manaus.def_total"></b> · autismo <b data-ref="iranduba.aut_total"></b> (Manaus <b data-ref="manaus.aut_total"></b>)</p>
+  </header>
+  <div class="corpo corpo-duplo">
+    <figure class="painel revela" id="g-def-cor" data-grafico="deficiencia_cor">
+      <figcaption class="painel-titulo">Pessoas com deficiência, por cor ou raça (%)</figcaption>
+      <div class="grafico" role="img"></div>
+    </figure>
+    <figure class="painel revela" id="g-aut-cor" data-grafico="autismo_cor">
+      <figcaption class="painel-titulo">Diagnóstico de autismo, por cor ou raça (%)</figcaption>
+      <div class="grafico" role="img"></div>
+    </figure>
+  </div>
+  <div class="corpo corpo-duplo">
+    <figure class="painel revela" id="g-analf-def" data-grafico="analf_def">
+      <figcaption class="painel-titulo">Taxa de analfabetismo (%) <span class="modo-nota"></span></figcaption>
+      <div class="grafico grafico-baixo" role="img"></div>
+    </figure>
+    <figure class="painel revela" id="g-def-sexo" data-grafico="def_sexo">
+      <figcaption class="painel-titulo">Por sexo (% dentro de cada sexo) <span class="modo-nota"></span></figcaption>
+      <div class="grafico grafico-baixo" role="img"></div>
+    </figure>
+  </div>
+  <div class="leitura revela">
+    <p>Entre as pessoas com deficiência, o analfabetismo é de <b data-ref="iranduba.analf_com_def"></b>, cerca de <b data-ref="deficiencia.vezes_analf"></b> o das pessoas sem deficiência (<b data-ref="iranduba.analf_sem_def"></b>). As diferenças por sexo são pequenas e, sem margem de erro, não se pode dizer que sejam relevantes.</p>
+  </div>
+  <div class="ressalvas revela">
+    <p class="selo selo-forte"><span class="selo-icone" aria-hidden="true">!</span>Resultados amostrais e preliminares, sem margem de erro e sem padronização por idade. Amarela não é confiável: <b data-ref="iranduba.def_amarela_casos"></b> casos em <b data-ref="iranduba.def_amarela_pop"></b> pessoas. Onde aparece “sem registro”, o IBGE não registra casos — isso não prova ausência.</p>
+    <details class="saiba"><summary>Saiba mais: como o Censo mede deficiência</summary><p>Pela limitação funcional, não por diagnóstico: é pessoa com deficiência quem declarou muita dificuldade ou nenhuma capacidade de enxergar, ouvir, andar, pegar objetos, comunicar-se ou cuidar de si. As contagens por cor da tabela de autismo diferem das da tabela de população e não devem ser misturadas.</p></details>
+  </div>
+</section>
+
+<div class="dois-rios" aria-hidden="true"></div>
+
+<!-- ============ 7 · casa e família ============ -->
+<section class="secao tom-noite" id="familias" aria-labelledby="t-familias">
+  <div class="horizonte" data-tipo="palafitas" aria-hidden="true"></div>
+  <header class="cabeca">
+    <p class="rotulo-secao">Casa e família</p>
+    <h2 id="t-familias">Como são as famílias?</h2>
+    <p class="numero-grande"><b data-ref="iranduba.moradores"></b><span class="unidade">moradores por domicílio, em média</span></p>
+    <p class="comparacao">em Manaus, <b data-ref="manaus.moradores"></b> · <b data-ref="iranduba.domicilios"></b> domicílios em Iranduba</p>
+  </header>
+  <div class="corpo corpo-com-janela">
+    <div class="pilha">
+      <figure class="painel revela" id="g-conjuge" data-grafico="conjuge">
+        <figcaption class="painel-titulo">Domicílios por presença de cônjuge da pessoa responsável (%)</figcaption>
+        <div class="grafico" role="img"></div>
+      </figure>
+      <figure class="painel revela" id="g-composicao" data-grafico="composicao">
+        <figcaption class="painel-titulo">Composição do domicílio, por sexo de quem chefia (% dentro de cada sexo)</figcaption>
+        <div class="grafico" role="img"></div>
+      </figure>
+    </div>
+    <figure class="janela janela-familia revela">
+      <picture>
+        <source type="image/webp" srcset="assets/img/cidade-casas-flutuantes-640.webp 640w, assets/img/cidade-casas-flutuantes-1080.webp 1080w, assets/img/cidade-casas-flutuantes-1600.webp 1600w" sizes="(min-width: 960px) 30vw, 92vw">
+        <img src="assets/img/cidade-casas-flutuantes-1080.jpg" srcset="assets/img/cidade-casas-flutuantes-640.jpg 640w, assets/img/cidade-casas-flutuantes-1080.jpg 1080w, assets/img/cidade-casas-flutuantes-1600.jpg 1600w" sizes="(min-width: 960px) 30vw, 92vw" width="1800" height="1198" loading="lazy" decoding="async" alt="Recorte da mesma vista aérea: casas flutuantes e barcos de passageiros lado a lado na água barrenta.">
+      </picture>
+      <figcaption>Casas flutuantes e barcos no porto de Iranduba.</figcaption>
+    </figure>
+  </div>
+  <figure class="painel revela" id="g-moradores" data-grafico="moradores">
+    <figcaption class="painel-titulo">Média de moradores, por sexo de quem chefia <span class="controles" data-controle="recorte"><button type="button" aria-pressed="true" data-v="cor">por cor ou raça</button><button type="button" aria-pressed="false" data-v="idade">por idade</button></span></figcaption>
+    <div class="grafico" role="img"></div>
+  </figure>
+  <div class="leitura revela">
+    <p>São chefiados por mulheres <b data-ref="iranduba.chefia_mulher_pct"></b> dos domicílios; entre eles, <b data-ref="iranduba.mono_fem_dentro_pct"></b> são de mulher sem cônjuge com filhos ou enteados (entre os chefiados por homens, <b data-ref="iranduba.mono_masc_dentro_pct"></b>). Casas chefiadas por mulheres têm mais moradores: <b data-ref="iranduba.moradores_m"></b> contra <b data-ref="iranduba.moradores_h"></b>.</p>
+  </div>
+  <div class="ressalvas revela">
+    <p class="selo"><span class="selo-icone" aria-hidden="true">!</span>A média de moradores por cor ou raça e por idade vem da amostra, sem margem de erro. Grupo amarelo: poucos domicílios, sem base para interpretação.</p>
+    <details class="saiba"><summary>Saiba mais: “dentro de cada sexo”</summary><p>Os percentuais da composição são calculados sobre os domicílios chefiados por homens e, separadamente, sobre os chefiados por mulheres. Por isso <b data-ref="iranduba.mono_fem_dentro_pct"></b> é a parcela entre os chefiados por mulheres; no total de domicílios, a mesma situação representa <b data-ref="iranduba.mono_fem_pct"></b>.</p></details>
+  </div>
+</section>
+
+<div class="dois-rios" aria-hidden="true"></div>
+
+<!-- ============ 8 · síntese ============ -->
+<section class="secao fechamento" id="sintese" aria-labelledby="t-sintese">
+  <picture class="fechamento-foto">
+    <source type="image/webp" srcset="assets/img/fechamento-vista-aerea-640.webp 640w, assets/img/fechamento-vista-aerea-1080.webp 1080w, assets/img/fechamento-vista-aerea-1600.webp 1600w" sizes="100vw">
+    <img src="assets/img/fechamento-vista-aerea-1600.jpg" srcset="assets/img/fechamento-vista-aerea-640.jpg 640w, assets/img/fechamento-vista-aerea-1080.jpg 1080w, assets/img/fechamento-vista-aerea-1600.jpg 1600w" sizes="100vw" width="1800" height="1198" loading="lazy" decoding="async" alt="Vista aérea da ponte estaiada sobre o rio Negro, com o mastro central, o tabuleiro e faixas de vegetação ao fundo.">
+  </picture>
+  <div class="horizonte" data-tipo="ponte-noite" aria-hidden="true"></div>
+  <header class="cabeca">
+    <p class="rotulo-secao">Síntese</p>
+    <h2 id="t-sintese">O que os dados mostram — e o que não dizem</h2>
+    <p class="abertura-sub">Um município jovem, em expansão rápida, mais rural que a capital, com famílias maiores e alfabetização mais baixa.</p>
+  </header>
+  <figure class="painel painel-tabela revela" id="g-sintese" data-grafico="sintese">
+    <figcaption class="painel-titulo">Indicadores-síntese, Iranduba × Manaus</figcaption>
+    <div class="grafico"></div>
+  </figure>
+  <div class="corpo corpo-duplo limites">
+    <div class="painel revela">
+      <h3>O que os dados não permitem afirmar</h3>
+      <ul class="lista">
+        <li>Os grupos amarelo e indígena têm poucos habitantes; no autismo, a tabela não registra casos neles em Iranduba, e isso não prova ausência.</li>
+        <li>Os grupos etários são de cinco anos, o que impede aplicar o corte legal de doze anos para crianças.</li>
+        <li>Cor ou raça é autodeclarada: a comparação entre censos mistura mudança de composição com mudança de autoidentificação.</li>
+        <li>O Censo é o retrato de um momento e não sustenta relações de causa; ponte e migração seletiva são hipóteses.</li>
+        <li>Deficiência, autismo e média de moradores por cor e idade vêm da amostra, sem margens de erro, e as taxas por cor não são padronizadas por idade.</li>
+        <li>As contagens por cor da tabela de autismo diferem das da tabela de população, sobretudo nos grupos pequenos.</li>
+      </ul>
+    </div>
+    <div class="painel revela">
+      <h3>Para ir além</h3>
+      <ul class="lista">
+        <li>Comparar com outros municípios da Região Metropolitana de Manaus e com o estado do Amazonas.</li>
+        <li>Padronizar por idade as taxas de alfabetização e de deficiência, com tabelas por idade e cor ou raça.</li>
+        <li>Incluir medidas de incerteza nos resultados amostrais.</li>
+        <li>Investigar migração, ocupação do território e acesso à escola.</li>
+      </ul>
+      <p class="relatorio-link"><a href="relatorio/Relatorio_Censo_Iranduba_v6.pdf">Ler o relatório técnico completo (PDF)</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="rodape-grade">
+    <div>
+      <h2>Fonte dos dados</h2>
+      <p>IBGE, Censo Demográfico <span data-rotulo>2022</span>: Panorama e SIDRA, tabelas <span data-rotulo>9606, 9543, 10126, 10147, 9877, 9881</span> e <span data-rotulo>9882</span>. Acesso em <span data-rotulo>22/10/2026</span>.</p>
+      <p><strong>Os números do site são idênticos aos do relatório</strong> — todos vêm de um único arquivo gerado a partir da base unificada, conferida contra o relatório.</p>
+      <p><a href="relatorio/Relatorio_Censo_Iranduba_v6.pdf">Relatório técnico: Análise Estatística do Censo Demográfico <span data-rotulo>2022</span> de Iranduba (AM)</a></p>
+    </div>
+    <div>
+      <h2>Autoria</h2>
+      <p>Alessandro de Oliveira Ramos · Estatística Aplicada a Computadores · Bacharelado em Ciência da Computação · CIESA — Centro Universitário de Ensino Superior do Amazonas.</p>
+      <p class="atalho">Modo apresentação: tecla <kbd>P</kbd>, depois as setas.</p>
+    </div>
+    <div>
+      <h2>Fotografias</h2>
+      <ul class="creditos" id="creditos"></ul>
+    </div>
+  </div>
+</footer>
+
+<div class="dica" id="dica" role="tooltip" hidden></div>
+<script src="assets/js/vendor/d3-7.9.0.min.js"></script>
+<script src="assets/js/horizontes.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

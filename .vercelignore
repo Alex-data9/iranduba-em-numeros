@@ -1,0 +1,7 @@
+*.csv
+*.doc
+*.docx
+/Relatorio_Censo_Iranduba_v6.pdf
+imagens_iranduba/
+tests/
+.claude/
