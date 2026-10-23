@@ -9,3 +9,6 @@ node_modules/
 ~$*
 # foto sem licença confirmada (não publicar)
 imagens_iranduba/b2ap3_large_Iranduba3.jpeg
+
+.vercel
+.env*
